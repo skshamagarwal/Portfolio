@@ -164,6 +164,12 @@ export default function NavBar() {
                 role="button">
                 EXPERIENCE</NavLink>
             </li>
+            {/* <li>
+              <NavLink to="/certifications"
+                onClick={() => setShowNav(!showNav)}
+                role="button">
+                CERTIFICATIONS</NavLink>
+            </li> */}
             <li>
               <NavLink to="/contact"
                 onClick={() => setShowNav(!showNav)}

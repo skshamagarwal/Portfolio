@@ -1,6 +1,18 @@
 const expList = [
     {
-        "duration": "May, 2022 - Present",
+        "duration": "Jan, 2023 - Present",
+        "position": "SDE Intern",
+        "name": "JUSPAY, Mumbai",
+        "desc": "Unifying payment gateways to give our customers a seamless, secure, reliable, end-to-end, enterprise-grade payment stack to achieve higher revenue at lower cost. Fintech | Functional Programming"
+    },
+    {
+        "duration": "September, 2022 - December, 2022",
+        "position": "Teaching Assistant - Python",
+        "name": "DY Patil International University, Pune",
+        "desc": "Responsibilities includes- Assisting Professor by conducting Lectures & Lab sessions. Presenting tutorials, also responsible for teaching and evaluation of labs.",
+    },
+    {
+        "duration": "May, 2022 - August, 2022",
         "position": "Backend Developer Intern",
         "name": "Frshr Technologies Pvt Ltd, Bangaluru",
         "desc": "Responsibilities includes - creating API's, performing database CRUD Operation, Software Testing, implementation of backend using NodeJS for Angular or React Applications, etc.",

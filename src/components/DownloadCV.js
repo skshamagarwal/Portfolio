@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import CV from "../assets/files/cv.pdf"
+// import CV from "../assets/files/cv.pdf"
 
 const ButtonStyle = styled.div`
   margin-top: 2rem;
@@ -28,7 +28,7 @@ const ButtonStyle = styled.div`
 export default function DownloadCV() {
     return (
         <ButtonStyle>
-            <a className="button" href={CV} download="Saksham's Resume" target='_blank' rel="noreferrer">
+            <a className="button" href="http://surl.li/cqmab" download="Saksham's Resume" target='_blank' rel="noreferrer">
                 Download CV
             </a>
         </ButtonStyle>

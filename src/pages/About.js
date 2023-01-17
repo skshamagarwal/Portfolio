@@ -82,12 +82,11 @@ export default function About() {
             <h2 className="about__heading">A Geek who thinks Coding is a Superpower</h2>
             <div className="about__info">
               <PText>
-                I am from Mount Abu - A hill station in the Aravalli range of Rajasthan, Currently in Pune Pursuing my Bachelors.
-                Alongside that, working at Frshr Technologies Pvt. Ltd. as an Python Developer Intern.
+                I am from Mount Abu - A hill station in the Aravalli range of Rajasthan, Currently in Mumbai working as an Software Developer Engineer Intern at JUSPAY .
                 <br />
                 <br />
-                I deveoped interest in coding because I hated all the other subjects during my schooling.
-                Back then getting to know coding was my only option, and now, not getting to explore it is my greatest fear.
+                I developed interest in coding because I was pretty average in other subjects during my schooling.
+                Back then, to start coding was my only option and now, not getting to explore it is my greatest fear.
                 I love learning & working with new technologies, and possess interest in Competetive Programming as well as contributing to Open Source. 
               </PText>
             </div>
@@ -135,7 +134,7 @@ export default function About() {
                 items: [
                   "D.Y. Patil International University, Akurdi, Pune",
                   "UGC",
-                  "CGPA: 8.9",
+                  "CGPA: 8.8",
                 ],
               },
               {
@@ -148,63 +147,6 @@ export default function About() {
               },
             ]}
           />
-          {/* <AboutItems
-            heading="Experience"
-            entries={[
-              {
-                title: "May 2021 - *",
-                items: [
-                  "Web Scraping Engineer Intern",
-                  "Frshr Technologies Pvt. Ltd",
-                  "Bangalore",
-                ],
-              },
-              {
-                title: "May 2021 - Aug 2021",
-                items: [
-                  "Software Engineer Intern",
-                  "Manastik Pvt. Ltd",
-                  "Pune",
-                ],
-              },
-              {
-                title: "April 2020 - May 2020",
-                items: [
-                  "Tech Content Writer",
-                  "Esential Services Outsource Pvt. Ltd.",
-                ],
-              },
-              {
-                title: "June 2021 - Aug 2021",
-                items: [
-                  "Reverse Image using CNN - Research Intern",
-                  "DY Patil International University",
-                  "Pune",
-                ],
-              },
-            ]}
-          />
-          <AboutItems
-            heading="Volunteering Experience"
-            entries={[
-              {
-                title: "Dec 2021 - *",
-                items: [
-                  "AI-ML Technical Lead",
-                  "Google Student Developer Club",
-                  "DYPIU",
-                ],
-              },
-              {
-                title: "May 2021 - Aug 2021",
-                items: [
-                  "Software Engineer Intern",
-                  "Manastik Pvt. Ltd",
-                  "Pune",
-                ],
-              }
-            ]}
-          /> */}
         </div>
 
       </div>

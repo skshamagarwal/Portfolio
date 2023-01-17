@@ -1,6 +1,12 @@
 const volList = [
     {
         "duration": "Nov, 2021 - Present",
+        "position": "Student Coordinator",
+        "name": "Training & Placement Cell, DYPIU",
+        "desc": "Looking after the T&P activities of our college and have close liaison with industry for the placement of peer students. Organizing lectures from the professionals and industry.",
+    },
+    {
+        "duration": "Nov, 2021 - Present",
         "position": "AI & ML Lead",
         "name": "Google Developer Student Club",
         "desc": "GDSC is a Google recognized student body at DYPIU which directly reports to Google for their activities. The main motive of this club is to make students work collaboratively from all over the world and boost their development skills.",

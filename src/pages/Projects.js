@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/SectionTitle";
-import ProjectCard from "../components/ProjectCard2";
+import ProjectCard from "../components/ProjectCard";
 import projectList from "../assets/data/projects";
 
 const ProjectStyles = styled.div`
@@ -35,12 +35,12 @@ const ProjectStyles = styled.div`
       }
     }
   }
-  /* .project__wrapper {
+  .project__wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin: 5rem 0;
-  } */
+  }
   .grid {
   display: grid;
   width: 114em;
@@ -117,16 +117,16 @@ export class Projects extends Component {
               </button>
             ))}
           </div>
-          {/* <div className="project__wrapper">
-            {this.state.projList.map((project, index) => (
-              <ProjectCard key={index} projects={project} />
-            ))}
-          </div> */}
-          <div className="grid">
+          <div className="project__wrapper">
             {this.state.projList.map((project, index) => (
               <ProjectCard key={index} projects={project} />
             ))}
           </div>
+          {/* <div className="grid">
+            {this.state.projList.map((project, index) => (
+              <ProjectCard key={index} projects={project} />
+            ))}
+          </div> */}
         </div>
       </ProjectStyles>
     );
