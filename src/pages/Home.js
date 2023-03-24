@@ -125,7 +125,6 @@ const HomeStyles = styled.div`
 export default function Home() {
   return (
     <HomeStyles>
-      {/* <Social /> */}
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
@@ -150,16 +149,6 @@ export default function Home() {
         <BsArrowDown />
       </div>
 
-      {/* <div className="project__section">
-        <div className="container">
-        <SectionTitle
-            heading="Projects"
-            subheading="my recent works"
-          ></SectionTitle>
-
-        </div>
-      </div> */}
-      
       <div className="services__section">
         <div className="container">
           <SectionTitle

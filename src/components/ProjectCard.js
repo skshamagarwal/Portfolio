@@ -72,16 +72,14 @@ const ProjectCardStyles = styled.div`
 export default function ProjectCard({ project }) {
   return (
     <ProjectCardStyles>
-      <div class="card">
+      <div className="card">
         <div className="card-image">
           <img src={project.img} alt="" />
-          <div class="card-details">
+          <div className="card-details">
             <h3>{project.name}</h3>
             <p>{project.desc}</p>
             
-            <a className="btn" href={project.githubLink}>
-              Github
-            </a>
+            <a className="btn" href={project.githubLink} target="_blank" rel="noopener noreferrer">Github</a>
           </div>
         </div>
       </div>
