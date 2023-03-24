@@ -13,8 +13,7 @@ import TodoImg from '../images/todo_app.JPG'
 const projectList = [
   {
     id: uuidv4(),
-    firstName: 'Predix',
-    lastName: 'DB',
+    name: 'PredixDB',
     desc:
       'Online platform that assists users to keep track media watched, currently watching, or planning to watch next. It even delivers personalized recommendations for each individual.',
     img: PredixImg,
@@ -24,8 +23,7 @@ const projectList = [
   },
   {
     id: uuidv4(),
-    firstName: 'Jobs ',
-    lastName: 'Scraper',
+    name: 'Jobs Scraper',
     desc:
       'Meta Search for Jobs, Vacancies and Internships and showing it all at a single platform. Developed while working with Frsh Tech Pvt Ltd',
     img: JobScraperImg,
@@ -35,8 +33,7 @@ const projectList = [
   },
   {
     id: uuidv4(),
-    firstName: 'Web ',
-    lastName: 'Portfolio',
+    name: 'Web Portfolio',
     desc:
       'My Personal Portfolio, showing all necessary details for an Computer Science Student seeking for career opportunities and extend reach. ',
     img: PortfolioImg,
@@ -46,8 +43,7 @@ const projectList = [
   },
   {
     id: uuidv4(),
-    firstName: 'ML from  ',
-    lastName: 'Scratch',
+    name: 'ML from Scratch',
     desc:
       'Implementation of Machine Learning Models - Decision Tree and Random Forest right from Scratch in Python without using any ML frameworks.',
     img: RFDTImg,
@@ -57,8 +53,7 @@ const projectList = [
   },
   {
     id: uuidv4(),
-    firstName: 'MED',
-    lastName: 'CARE',
+    name: 'MEDCARE',
     desc:
       'Mobile Application for Consulting Doctors, keeping track of Health Checkups and even mark important Dates & Appointments... All in one Applcation for user\'s daily Health Care Routine.',
     img: MedCareImg,
@@ -68,8 +63,7 @@ const projectList = [
   },
   {
     id: uuidv4(),
-    firstName: 'HealthCare ',
-    lastName: 'CAP',
+    name: 'HealthCare CAP',
     desc:
       'Cardiovascular Ailment Prediction - an awesome Heart Attack Prediction application using Machine Learning Techniques!',
     img: CAPImg,
@@ -79,8 +73,7 @@ const projectList = [
   },
   {
     id: uuidv4(),
-    firstName: 'Image ',
-    lastName: 'Detection',
+    name: 'Image Detection',
     desc:
       'Machine Learning Model that detect objects in an image using VGG Transfer Learning. It uses CNN Technique to identify and train upon the dataset.',
     img: ImgDetectionImg,
@@ -90,8 +83,7 @@ const projectList = [
   },
   {
     id: uuidv4(),
-    firstName: 'Email ',
-    lastName: 'BOT',
+    name: 'Email BOT',
     desc:
       'Python Script that automates the process of sending emails manually. The bot accepts your voice commands and sends or copies email to clipboard on the user\'s behalf.',
     img: EmailBotImg,
@@ -101,8 +93,7 @@ const projectList = [
   },
   {
     id: uuidv4(),
-    firstName: 'TODO ',
-    lastName: 'App',
+    name: 'TODO App',
     desc:
       'My TODO application to manage all life crises. Add Tasks you have to accomplish, mark pending or finshed even delete if needed. Simple Solution to stay productive.',
     img: TodoImg,
@@ -112,8 +103,7 @@ const projectList = [
   },
   {
     id: uuidv4(),
-    firstName: 'Result ',
-    lastName: 'Generator',
+    name: 'Result Generator',
     desc:
       'Python Script that automates the process of generating result / report cards for each student from the details stored in csv / .xlsx.',
     img: ResultGenImg,

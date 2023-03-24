@@ -4,7 +4,7 @@ import FooterColumns from "./FooterColumns";
 import PText from "./PText";
 
 const FooterStyles = styled.div`
-  padding-top: 10rem;
+  padding-top: 5rem;
   background-color: var(--deep-dark);
   .container {
     display: flex;

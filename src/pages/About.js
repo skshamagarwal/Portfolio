@@ -86,7 +86,7 @@ export default function About() {
                 <br />
                 <br />
                 I developed interest in coding because I was pretty average in other subjects during my schooling.
-                Back then, to start coding was my only option and now, not getting to explore it is my greatest fear.
+                Back then, to start coding was my only option and now - not getting to explore this field is my greatest fear.
                 I love learning & working with new technologies, and possess interest in Competetive Programming as well as contributing to Open Source. 
               </PText>
             </div>
@@ -106,7 +106,7 @@ export default function About() {
             entries={[
               {
                 title: "FrontEnd",
-                items: ["HTML", "CSS", "SCSS", "React JS"],
+                items: ["HTML", "CSS", "SCSS", "React JS", "Rescript", "Tailwind"],
               },
               {
                 title: "Databases",
@@ -122,7 +122,7 @@ export default function About() {
               },
               {
                 title: "Languages",
-                items: ["Python", "C++", "JavaScript"],
+                items: ["Python", "C++", "JavaScript", "Haskell", "PureScript"],
               },
             ]}
           />

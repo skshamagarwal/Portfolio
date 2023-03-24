@@ -2,106 +2,85 @@ import React from "react";
 import styled from "styled-components";
 
 const ProjectCardStyles = styled.div`
-  position: relative;
-  width: 19vw;
-  height: 15vw;
-  border: 2px solid var(--gray-1);
-  border-radius: 1rem;
-  overflow: hidden;
-
   .card {
-    height: 100%;
+    margin: 20px;
+    width: 350px;
+    height: 250px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .card-image {
+    position: relative;
+    height: 250px;
+  }
+
+  .card-image img {
     width: 100%;
-    transition: 1s;
-    &:hover {
-      .detail {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
+    height: 100%;
+    object-fit: cover; 
+  }
 
-    .detail {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0s, opacity 0.5s linear;
-      background-color: rgb(30, 30, 30, 0.95);
-      height: 100%;
+  .card-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(100%);
+  }
+
+  .card:hover .card-details {
+    transform: translateY(0);
+  }
+
+  .card-details h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
+
+  .card-details p {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .btn {
+  display: inline;
+    font-size: 12px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .card {
       width: 100%;
-      position: absolute;
-      padding: 0 2rem;
-      top: 0;
-
-      text-align: center;
-      transition: 1s;
-      overflow-y: auto;
-      ::-webkit-scrollbar {
-        width: 0;
-      }
-
-      .title {
-        margin-bottom: 1.5rem;
-        p {
-          font-size: 2.5rem;
-          color: white;
-          span {
-            color: white;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-          }
-        }
-      }
-      .desc {
-        p {
-          font-size: 1.2rem;
-          margin-bottom: 2.5rem;
-        }
-      }
-      .buttons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        button {
-          cursor: pointer;
-          border: 2px solid var(--deep-dark);
-          border-radius: 1rem;
-          padding: 5px 10px;
-          color: var(--deep-dark);
-          background-color: white;
-          transition: 0.5s;
-          &:hover {
-            border: 2px solid var(--gray-1);
-            background-color: var(--deep-dark);
-            color: var(--gray-1);
-          }
-        }
-      }
     }
   }
 `;
-export default function ProjectCard({ projects }) {
+export default function ProjectCard({ project }) {
   return (
     <ProjectCardStyles>
-      <div className="card">
-        <img src={projects.img} alt="" />
-        <div className="detail">
-          <div className="title">
-            <p>
-              {projects.firstName}
-              <span>{projects.lastName}</span>
-            </p>
-          </div>
-          <div className="desc">
-            <p>{projects.desc}</p>
-          </div>
-          <div className="buttons">
-            <a href={projects.githubLink}>
-              <button>Github</button>
-            </a>
-            <a href={projects.liveLink}>
-              <button>View Live</button>
+      <div class="card">
+        <div className="card-image">
+          <img src={project.img} alt="" />
+          <div class="card-details">
+            <h3>{project.name}</h3>
+            <p>{project.desc}</p>
+            
+            <a className="btn" href={project.githubLink}>
+              Github
             </a>
           </div>
         </div>

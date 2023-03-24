@@ -35,24 +35,11 @@ const ProjectStyles = styled.div`
       }
     }
   }
-  .project__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 5rem 0;
-  }
-  .grid {
-  display: grid;
-  width: 114em;
-  grid-gap: 6rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  align-items: start;
-
-  @media only screen and (max-width: 60em) {
-  .grid {
-    grid-gap: 3rem;
-  }
-}
+  .card-container {
+    margin: 3rem 0rem 3rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 `;
 
@@ -105,7 +92,6 @@ export class Projects extends Component {
     return (
       <ProjectStyles>
         <SectionTitle heading="PROJECTS" subheading="some of my works" />
-        <div className="container">
           <div className="filters">
             {this.filter_names.map((name, index) => (
               <button
@@ -117,17 +103,11 @@ export class Projects extends Component {
               </button>
             ))}
           </div>
-          <div className="project__wrapper">
+          <div className="card-container">
             {this.state.projList.map((project, index) => (
-              <ProjectCard key={index} projects={project} />
+              <ProjectCard key={index} project={project} />
             ))}
           </div>
-          {/* <div className="grid">
-            {this.state.projList.map((project, index) => (
-              <ProjectCard key={index} projects={project} />
-            ))}
-          </div> */}
-        </div>
       </ProjectStyles>
     );
   }
