@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -11,7 +11,7 @@ import Experience from "./pages/Experience";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/">
+    <HashRouter basename="/">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,6 +21,6 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
