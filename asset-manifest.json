@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.js": "/static/js/main.9650071e.chunk.js",
+    "main.js.map": "/static/js/main.9650071e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.26096b02.js",
+    "runtime-main.js.map": "/static/js/runtime-main.26096b02.js.map",
+    "static/js/2.87337b57.chunk.js": "/static/js/2.87337b57.chunk.js",
+    "static/js/2.87337b57.chunk.js.map": "/static/js/2.87337b57.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.87337b57.chunk.js.LICENSE.txt": "/static/js/2.87337b57.chunk.js.LICENSE.txt",
+    "static/media/LilitaOne-Regular.797856d9.ttf": "/static/media/LilitaOne-Regular.797856d9.ttf",
+    "static/media/Montserrat-Bold.079ca05d.ttf": "/static/media/Montserrat-Bold.079ca05d.ttf",
+    "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/static/media/Montserrat-SemiBold.fa8441f3.ttf",
+    "static/media/RobotoMono-Regular.418a8f9f.ttf": "/static/media/RobotoMono-Regular.418a8f9f.ttf",
+    "static/media/cap.d168fe04.JPG": "/static/media/cap.d168fe04.JPG",
+    "static/media/email_bot.2644758e.png": "/static/media/email_bot.2644758e.png",
+    "static/media/image_detection.fd19b74b.jpg": "/static/media/image_detection.fd19b74b.jpg",
+    "static/media/img.0173b140.jpeg": "/static/media/img.0173b140.jpeg",
+    "static/media/job_scraper.bff17f98.JPG": "/static/media/job_scraper.bff17f98.JPG",
+    "static/media/map.163c261a.JPG": "/static/media/map.163c261a.JPG",
+    "static/media/medcare.ab9942e2.JPG": "/static/media/medcare.ab9942e2.JPG",
+    "static/media/portfolio.a1a381b6.JPG": "/static/media/portfolio.a1a381b6.JPG",
+    "static/media/predix.3842056f.jpg": "/static/media/predix.3842056f.jpg",
+    "static/media/result_generator.c90624db.png": "/static/media/result_generator.c90624db.png",
+    "static/media/rfdt.5db4f79b.png": "/static/media/rfdt.5db4f79b.png",
+    "static/media/todo_app.13494c9f.JPG": "/static/media/todo_app.13494c9f.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26096b02.js",
+    "static/js/2.87337b57.chunk.js",
+    "static/js/main.9650071e.chunk.js"
+  ]
+}
