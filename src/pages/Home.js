@@ -4,9 +4,10 @@ import PText from "../components/PText";
 import Button from "../components/Button";
 import SectionTitle from "../components/SectionTitle";
 import ServicesSectionItem from "../components/ServicesSectionItem";
-import { MdDesktopMac, MdDeveloperMode, MdCode } from "react-icons/md";
+import { MdDeveloperMode, MdCode} from "react-icons/md";
 import { BsArrowDown } from "react-icons/bs";
 import DownloadCV from "../components/DownloadCV";
+import { FaGlobeAmericas } from "react-icons/fa";
 import TestimonialsSection from "../components/TestimonialsSection";
 
 const HomeStyles = styled.div`
@@ -159,7 +160,7 @@ export default function Home() {
           ></SectionTitle>
           <div className="services__items">
             <ServicesSectionItem
-              icon={<MdDesktopMac />}
+              icon={<FaGlobeAmericas />}
               title="Web Development"
               desc="I build responsive, high-performance websites using Node, React, Django, and HTML & Tailwind, tailored to your requirements."
             />

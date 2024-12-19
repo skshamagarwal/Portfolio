@@ -82,7 +82,7 @@ export default function About() {
             <h2 className="about__heading">A Geek who thinks Coding is a Superpower</h2>
             <div className="about__info">
               <PText>
-                I am from Mount Abu - A hill station in the Aravalli range of Rajasthan, Currently in Mumbai working as an Software Developer Engineer Intern at JUSPAY .
+                I am from Mount Abu, a hill station in the Aravalli range of Rajasthan, and am currently based in Mumbai, working as a Software Development Engineer at Juspay for the past two years.
                 <br />
                 <br />
                 I developed interest in coding because I was pretty average in other subjects during my schooling.
