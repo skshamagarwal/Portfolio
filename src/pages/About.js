@@ -118,11 +118,11 @@ export default function About() {
               },
               {
                 title: "App Development",
-                items: ["Flutter", "Dart", "Firebase"],
+                items: ["Flutter", "Dart", "Firebase", "Android Native"],
               },
               {
                 title: "Languages",
-                items: ["Python", "C++", "JavaScript", "Haskell", "PureScript"],
+                items: ["Python", "C++", "JavaScript", "Haskell", "Java"],
               },
             ]}
           />
@@ -130,11 +130,11 @@ export default function About() {
             heading="Education"
             entries={[
               {
-                title: "B.Tech - CSE *",
+                title: "B.Tech - CSE",
                 items: [
                   "D.Y. Patil International University, Akurdi, Pune",
                   "UGC",
-                  "CGPA: 8.8",
+                  "CGPA: 8.9",
                 ],
               },
               {

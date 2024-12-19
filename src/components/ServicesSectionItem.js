@@ -7,7 +7,8 @@ const ServicesSectionItemStyles = styled.div`
   text-align: center;
   .services__item {
     svg {
-      width: 3rem;
+      height: 4rem;
+      margin-bottom: 1rem;;
     }
     .services__item__title {
       font-size: 2.5rem;

@@ -1,51 +1,50 @@
 import React, { useState } from "react";
-import { MdEmail, MdLocalPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import styled from "styled-components";
 import ContactInfoItem from "../components/ContactInfoItem";
 import SectionTitle from "../components/SectionTitle";
-import Map from "../components/Map";
 import emailjs from "emailjs-com";
+import { FaLinkedin } from "react-icons/fa";
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
   .contact__wrapper {
-      display: flex;
-      gap: 5rem;
-      margin-top: 7rem;
-      justify-content: space-between;
-      position relative;
+    display: flex;
+    gap: 5rem;
+    margin-top: 7rem;
+    justify-content: space-between;
+    position: relative;
 
-      .left {
-          width: 100%;
-          max-width: 500px;
-          
-        }
-        .right {
-          width: 100%;
-          max-width: 500px;
-      }
+    .left {
+      width: 100%;
+      max-width: 500px;
+    }
+    .right {
+      width: 100%;
+      max-width: 500px;
+    }
   }
   .contact__wrapper::after {
-      position: absolute;
-      content: '';
-      width: 2px;
-      height: 50%;
-      background-color: var(--gray-1);
-      left: 50%;
-      top: 30%;
-      transform: translate(-50%, -50%)
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 50%;
+    background-color: var(--gray-1);
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
   }
 
   @media only screen and (max-width: 768px) {
     .contact__wrapper {
-        flex-direction: column;
-        .left, 
-        .right {
-            max-width: 100%;
-        }
-        &::after {
+      flex-direction: column;
+      .left,
+      .right {
+        max-width: 100%;
+      }
+      &::after {
         display: none;
-        }
+      }
     }
   }
 `;
@@ -76,15 +75,24 @@ const FormSectionStyle = styled.form`
     }
   }
   button[type="submit"] {
+    font-size: 1.8rem;
     background-color: var(--gray-1);
-    color: var(--black);
-    font-size: 2rem;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 1rem 4rem;
+    padding: 0.7em 1.5em;
     border-radius: 8px;
-    cursor: pointer;
+    border: 2px solid var(--gray-1);
+    color: black;
+    transition: 1s ease;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--gray-1);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    button[type="submit"] {
+      font-size: 1.4rem;
+    }
   }
 `;
 
@@ -126,12 +134,24 @@ export default function Contact() {
           <SectionTitle heading="Contact" subheading="Get in touch" />
           <div className="contact__wrapper">
             <div className="left">
-              <ContactInfoItem icon={<MdLocalPhone />} text="+919057297344" />
-              <ContactInfoItem
-                icon={<MdEmail />}
-                text="skshamagarwal@gmail.com"
-              />
-              <ContactInfoItem text="DY Patil College Road, Akurdi, Pune, India" />
+              <a
+                href="mailto:skshamagarwal@gmail.com"
+                target="_blank"
+                rel="noreferrar noreferrer"
+              >
+                <ContactInfoItem
+                  icon={<MdEmail />}
+                  text="skshamagarwal@gmail.com"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/skshamagarwal/"
+                target="_blank"
+                rel="noreferrar noreferrer"
+              >
+                <ContactInfoItem icon={<FaLinkedin />} text="Linked In" />
+              </a>
+              <ContactInfoItem text="Santacruz, Mumbai - India" />
             </div>
             <div className="right">
               <FormSectionStyle onSubmit={sendEmail}>
@@ -184,9 +204,9 @@ export default function Contact() {
           </div>
         </div>
       </ContactSectionStyle>
-      <div>
+      {/* <div>
         <Map />
-      </div>
+      </div> */}
     </>
   );
 }

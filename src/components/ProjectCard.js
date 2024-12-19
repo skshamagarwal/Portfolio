@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectCardStyles = styled.div`
   .card {
@@ -22,7 +23,7 @@ const ProjectCardStyles = styled.div`
   .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
   }
 
   .card-details {
@@ -52,17 +53,6 @@ const ProjectCardStyles = styled.div`
     line-height: 1.5;
   }
 
-  .btn {
-  display: inline;
-    font-size: 12px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-
   @media only screen and (max-width: 768px) {
     .card {
       width: 100%;
@@ -76,10 +66,17 @@ export default function ProjectCard({ project }) {
         <div className="card-image">
           <img src={project.img} alt="" />
           <div className="card-details">
-            <h3>{project.name}</h3>
+            <div className="flex gap-6">
+              <h3>{project.name}</h3>
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="bg-black h-12 w-fit p-2 rounded-full hover:scale-150 transition ease-in-out delay-150 cursor-pointer" />
+              </a>
+            </div>
             <p>{project.desc}</p>
-            
-            <a className="btn" href={project.githubLink} target="_blank" rel="noopener noreferrer">Github</a>
           </div>
         </div>
       </div>

@@ -58,7 +58,7 @@ export default function Footer() {
           <h1 className="footer__c1__title">Saksham Agarwal</h1>
           <PText>
             {
-              "I am a Computer Science Student who is looking forward to work with you... I love solving complex problems and bringing concepts to life. With every line of code that I write, I strive to make a new step to explore more."
+              "I am a passionate Software Developer, eager to collaborate and create impactful solutions. I thrive on solving complex problems and bringing innovative concepts to life."
             }
           </PText>
         </div>

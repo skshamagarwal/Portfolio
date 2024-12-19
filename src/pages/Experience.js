@@ -53,6 +53,7 @@ const ExpStyles = styled.div`
             .compName {
               margin-bottom: 2rem;
               letter-spacing: 2px;
+              font-size: 12px;
             }
             p {
               font-size: 16px;

@@ -89,7 +89,11 @@ export default function ProjectCard({ projects }) {
               {projects.lastName}
             </h1>
             <p className="card-text">{projects.desc}</p>
-            <a href={projects.githubLink}>
+            <a
+              href={projects.githubLink}
+              target="_blank"
+              rel="noreferrar noreferrer"
+            >
               <button className="card-btn">
                 Visit <span>&rarr;</span>
               </button>

@@ -13,15 +13,20 @@ const TestimonialSectionStyles = styled.div`
   .testimonial__wrapper {
     position: relative;
     max-width: 700px;
+    height: max-content;
     margin: 0 auto;
   }
   .testimonial__info {
     width: 100%;
-    height: fit-content;
+    flex-grow: 1;
     padding: 3rem;
     background-color: var(--deep-dark);
     border-radius: 12px;
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .testimonial__desc {
     .para {

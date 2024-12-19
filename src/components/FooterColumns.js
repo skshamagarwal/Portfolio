@@ -14,12 +14,9 @@ const ColStyles = styled.div`
         font-size: 1.8rem;
         letter-spacing: 2px;
         &:hover {
-            color: var(--white);
+          color: var(--white);
         }
-    }
-    &:hover {
-        transform: scale(1.1);
-    }
+      }
     }
   }
 `;
@@ -44,7 +41,7 @@ export default function FooterColumns({
       <h1 className="heading">{heading}</h1>
       <ul>
         {links.map((item, index) => (
-          <li key={index}>
+          <li className="hover:scale-110 transition ease-in-out delay-150" key={index}>
             {item.type === "Link" ? (
               <Link to={item.path}>{item.title}</Link>
             ) : (

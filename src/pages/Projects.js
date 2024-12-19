@@ -97,7 +97,7 @@ export class Projects extends Component {
               <button
                 onClick={() => this.BtnClick(name)}
                 key={index}
-                className="btn"
+                className="btn rounded-md"
               >
                 <p>{name}</p>
               </button>

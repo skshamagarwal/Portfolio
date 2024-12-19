@@ -4,7 +4,7 @@ import PText from "../components/PText";
 import Button from "../components/Button";
 import SectionTitle from "../components/SectionTitle";
 import ServicesSectionItem from "../components/ServicesSectionItem";
-import { MdDesktopMac } from "react-icons/md";
+import { MdDesktopMac, MdDeveloperMode, MdCode } from "react-icons/md";
 import { BsArrowDown } from "react-icons/bs";
 import DownloadCV from "../components/DownloadCV";
 import TestimonialsSection from "../components/TestimonialsSection";
@@ -53,7 +53,9 @@ const HomeStyles = styled.div`
   }
 
   .scroll__icon {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: -8rem;
     svg {
       width: 5rem;
@@ -134,7 +136,7 @@ export default function Home() {
           <div className="hero__info">
             <PText>
               {
-                "I am a Computer Science Student who is looking forward to work with you... I love solving complex problems and bringing concepts to life. With every line of code that I write, I strive to make a new step to explore more."
+                "I am a passionate Software Developer with a background in Computer Science, eager to collaborate and create impactful solutions. I thrive on solving complex problems and bringing innovative concepts to life. With every line of code, I aim to push boundaries, learn, and explore new possibilities."
               }
             </PText>
             <div className="buttons">
@@ -159,17 +161,17 @@ export default function Home() {
             <ServicesSectionItem
               icon={<MdDesktopMac />}
               title="Web Development"
-              desc="I develop responsive and high performance websites asper requirements using React, Django or HTML & CSS only."
+              desc="I build responsive, high-performance websites using Node, React, Django, and HTML & Tailwind, tailored to your requirements."
             />
             <ServicesSectionItem
-              icon={<MdDesktopMac />}
+              icon={<MdDeveloperMode />}
               title="Mobile App Dev"
-              desc="I also develop mobile applications asper requirements using Flutter & Dart."
+              desc="I create custom mobile apps, from native Android to cross-platform solutions with React Native, Flutter, and Spring."
             />
             <ServicesSectionItem
-              icon={<MdDesktopMac />}
-              title="Web Crawling"
-              desc="I can scrape data from web and provide it in required formats using Python / NodeJS."
+              icon={<MdCode />}
+              title="Code Support"
+              desc="I specialize in a wide range of scripting solutions, from efficient web scraping to developing advanced AIML models, tailored to your needs."
             />
           </div>
         </div>
