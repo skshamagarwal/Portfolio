@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { MdArrowForward, MdArrowBack } from 'react-icons/md';
-import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import PText from './PText';
-import SectionTitle from './SectionTitle';
-import testimonials from '../assets/data/testimonials';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { MdArrowForward, MdArrowBack } from "react-icons/md";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
+import PText from "./PText";
+import SectionTitle from "./SectionTitle";
+import testimonials from "../assets/data/testimonials";
 
 const TestimonialSectionStyles = styled.div`
   overflow-x: hidden;
@@ -35,7 +35,7 @@ const TestimonialSectionStyles = styled.div`
   }
   .testimonial__name {
     margin-top: 4rem;
-    font-family: 'Montserrat Bold';
+    font-family: "Montserrat Bold";
     font-size: 2.2rem;
   }
   .testimonial__title {
@@ -111,7 +111,7 @@ export default function TestimonialsSection() {
           subheading="reviews recieved from work places"
           heading="Testimonials"
         />
-        <div className="testimonial__wrapper">
+        <div className="testimonial__wrapper min-h-[290px]">
           <SwitchTransition component={null}>
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
               <div className="testimonial__info">
@@ -128,18 +128,10 @@ export default function TestimonialsSection() {
         </div>
 
         <div className="arrows">
-          <div
-            className="prev"
-            onClick={handlePrev}
-            role="button"
-          >
+          <div className="prev" onClick={handlePrev} role="button">
             <MdArrowBack />
           </div>
-          <div
-            className="next"
-            onClick={handleNext}
-            role="button"
-          >
+          <div className="next" onClick={handleNext} role="button">
             <MdArrowForward />
           </div>
         </div>
