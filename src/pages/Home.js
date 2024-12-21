@@ -10,7 +10,7 @@ import DownloadCV from "../components/DownloadCV";
 import { FaGlobeAmericas } from "react-icons/fa";
 import TestimonialsSection from "../components/TestimonialsSection";
 import Typewriter from "../components/Typewriter";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 
 const HomeStyles = styled.div`
   .hero {
