@@ -64,7 +64,11 @@ export default function ProjectCard({ project }) {
     <ProjectCardStyles>
       <div className="card">
         <div className="card-image">
-          <img src={project.img} alt="" />
+          <img
+            src={project.img}
+            loading="lazy"
+            alt={"project " + project.name}
+          />
           <div className="card-details">
             <div className="flex gap-6">
               <h3>{project.name}</h3>

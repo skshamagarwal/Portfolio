@@ -2,7 +2,7 @@ import React from "react";
 import PText from "../components/PText";
 import styled from "styled-components";
 import AboutItems from "../components/AboutItems";
-import Img from "../assets/images/img.jpeg"
+import Img from "../assets/images/img.jpeg";
 import DownloadCV from "../components/DownloadCV";
 
 const AboutStyles = styled.div`
@@ -79,24 +79,27 @@ export default function About() {
             <p className="about__subheading">
               Hi, I am <span>Saksham Agarwal</span>
             </p>
-            <h2 className="about__heading">A Geek who thinks Coding is a Superpower</h2>
+            <h2 className="about__heading">
+              A Geek who thinks Coding is a Superpower
+            </h2>
             <div className="about__info">
               <PText>
-                I am from Mount Abu, a hill station in the Aravalli range of Rajasthan, and am currently based in Mumbai, working as a Software Development Engineer at Juspay for the past two years.
+                I am from Mount Abu, a hill station in the Aravalli range of
+                Rajasthan, and am currently based in Mumbai, working as a
+                Software Development Engineer at Juspay for the past two years.
                 <br />
-                <br />
-                I developed interest in coding because I was pretty average in other subjects during my schooling.
-                Back then, to start coding was my only option and now - not getting to explore this field is my greatest fear.
-                I love learning & working with new technologies, and possess interest in Competetive Programming as well as contributing to Open Source. 
+                <br />I developed interest in coding because I was pretty
+                average in other subjects during my schooling. Back then, to
+                start coding was my only option and now - not getting to explore
+                this field is my greatest fear. I love learning & working with
+                new technologies, and possess interest in Competetive
+                Programming as well as contributing to Open Source.
               </PText>
             </div>
             <DownloadCV />
           </div>
           <div className="right">
-            <img
-              src={Img}
-              alt="My Img"
-            />
+            <img loading="lazy" src={Img} alt="My Img" />
           </div>
         </div>
 
@@ -106,7 +109,14 @@ export default function About() {
             entries={[
               {
                 title: "FrontEnd",
-                items: ["HTML", "CSS", "SCSS", "React JS", "Rescript", "Tailwind"],
+                items: [
+                  "HTML",
+                  "CSS",
+                  "SCSS",
+                  "React JS",
+                  "Rescript",
+                  "Tailwind",
+                ],
               },
               {
                 title: "Databases",
@@ -148,7 +158,6 @@ export default function About() {
             ]}
           />
         </div>
-
       </div>
     </AboutStyles>
   );

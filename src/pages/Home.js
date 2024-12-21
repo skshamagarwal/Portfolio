@@ -4,11 +4,13 @@ import PText from "../components/PText";
 import Button from "../components/Button";
 import SectionTitle from "../components/SectionTitle";
 import ServicesSectionItem from "../components/ServicesSectionItem";
-import { MdDeveloperMode, MdCode} from "react-icons/md";
+import { MdDeveloperMode, MdCode } from "react-icons/md";
 import { BsArrowDown } from "react-icons/bs";
 import DownloadCV from "../components/DownloadCV";
 import { FaGlobeAmericas } from "react-icons/fa";
 import TestimonialsSection from "../components/TestimonialsSection";
+import Typewriter from "../components/Typewriter";
+import { useEffect, useState } from "react/cjs/react.development";
 
 const HomeStyles = styled.div`
   .hero {
@@ -126,25 +128,42 @@ const HomeStyles = styled.div`
 `;
 
 export default function Home() {
+  const [showDiv, setShowDiv] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowDiv(true);
+    }, 2000);
+
+    return () => clearTimeout(timer); // Cleanup the timer
+  }, []);
   return (
     <HomeStyles>
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
-            <span>Hello, This is</span>
-            <span className="hero__name">Saksham Agarwal</span>
+            <span>
+              <Typewriter text="Hello, This is" speed={100} />
+            </span>
+            {showDiv && (
+              <span className="hero__name animate-fade-in">
+                Saksham Agarwal
+              </span>
+            )}
           </h1>
-          <div className="hero__info">
-            <PText>
-              {
-                "I am a passionate Software Developer with a background in Computer Science, eager to collaborate and create impactful solutions. I thrive on solving complex problems and bringing innovative concepts to life. With every line of code, I aim to push boundaries, learn, and explore new possibilities."
-              }
-            </PText>
-            <div className="buttons">
-              <DownloadCV />
-              <Button btnLink="/contact" btnText="Contact" outline={true} />
+          {showDiv && (
+            <div className="hero__info animate-fade-in">
+              <PText>
+                {
+                  "I am a passionate Software Developer with a background in Computer Science, eager to collaborate and create impactful solutions. I thrive on solving complex problems and bringing innovative concepts to life. With every line of code, I aim to push boundaries, learn, and explore new possibilities."
+                }
+              </PText>
+              <div className="buttons">
+                <DownloadCV />
+                <Button btnLink="/contact" btnText="Contact" outline={true} />
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
 
@@ -179,6 +198,7 @@ export default function Home() {
       </div>
 
       <TestimonialsSection />
+      
       <div className="contact__banner">
         <div className="container">
           <div className="contact__wrapper">
